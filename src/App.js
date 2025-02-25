@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import { Dexie } from 'dexie'
 import { useLiveQuery } from 'dexie-react-hooks'
+import TaskTracker from "./components/TaskTracker"; 
 
 const db = new Dexie('todoApp');
 db.version(1).stores({
@@ -34,6 +35,7 @@ const App = () => {
   return (
     <div className="container">
       <h3 className="teal-text center-align">Todo App</h3>
+      <TaskTracker tasks={allItems || []} />
       <form className="add-item-form" onSubmit={addTask}>
         <input
           type="text"

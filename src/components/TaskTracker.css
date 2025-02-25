@@ -1,0 +1,40 @@
+.task-tracker {
+    background-color: #dfe6fd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid #5a54fc;
+  }
+  
+  .progress-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px auto;
+  }
+  
+  .task-tracker ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-tracker ul li {
+    margin-top: 8px;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .task-message {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
